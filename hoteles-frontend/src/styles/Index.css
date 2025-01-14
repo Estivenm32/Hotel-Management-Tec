@@ -1,0 +1,134 @@
+/* Barra de encabezado */  
+  .header-bar {
+    position: relative;
+    color: #fff;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /* Sombra opcional */
+    z-index: 1;
+  }
+
+  .header-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(12, 188, 135, 0.67); /* Fondo verde translúcido */
+    z-index: -1; /* Detrás del contenido */
+  }
+
+
+  
+  .header-title {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    justify-self: left;
+  }
+  
+  .app-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .app-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo gris oscuro transparente */
+    z-index: -1; /* Mantener el fondo detrás del contenido */
+  }
+  
+
+  /* Elimina márgenes y paddings globales */
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Asegura que el contenedor principal ocupe toda la pantalla */
+  #root {
+    width: 100%;
+    height: 100%;
+  }
+
+  .textPrincipal{
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(173, 216, 230, 0.8); /* Azul claro con opacidad */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none; /* Quitar subrayado del enlace */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra opcional */
+    transition: all 0.3s ease; /* Suavizar transiciones */
+  }
+  
+  .custom-button:hover {
+    background-color: rgba(135, 206, 250, 0.9); /* Azul más intenso */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Incrementar sombra al pasar */
+    transform: scale(1.05); /* Efecto de "zoom" ligero */
+  }
+  
+  .custom-button:active {
+    background-color: rgba(70, 130, 180, 0.9); /* Azul más oscuro */
+    transform: scale(0.95); /* Reducir tamaño al hacer clic */
+  }
+  
+
+  .home-page-container {
+    position: relative;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url('https://images.unsplash.com/photo-1533406129549-d664f406c25f?q=80&w=1590&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  
+  .home-page-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.2); /* Gris translúcido */
+    z-index: 1; /* Más alto que el fondo pero detrás del contenido */
+  }
+  
+  .header-bar,
+  .p-8 {
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté sobre el overlay */
+  }
+  

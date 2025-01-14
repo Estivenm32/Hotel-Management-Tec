@@ -1,0 +1,60 @@
+form {
+    position: relative; /* Asegura que los elementos hijos puedan posicionarse en relación al formulario */
+    padding-bottom: 20px; /* Espacio para que el botón no tape otros elementos */ 
+  }
+  
+  .add-room-btn {
+    position: absolute;
+    /*bottom: 10px;  Ajusta la distancia desde el fondo */ 
+    margin-top: 276px;
+    left: 38%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición horizontal correctamente */  
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-room-btn:hover {
+    background-color: #0056b3; /* Cambia el color al pasar el mouse */
+  }
+
+  .selected-rooms {
+    max-height: 150px; /* Limita la altura del contenedor */
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+    border: 1px solid #ddd; /* Bordes del contenedor */
+    padding: 0; /* Elimina relleno para ajustar los bordes */
+    margin-top: 16px;
+    border-radius: 4px; /* Esquinas redondeadas */
+    position: relative;
+  }
+  
+  .hotel-info-table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina los espacios entre bordes */
+  }
+  
+  .hotel-info-table thead th {
+    position: sticky; /* Hace que los encabezados sean fijos */
+    top: 0; /* Posición del encabezado al principio */
+    z-index: 2; /* Asegura que el encabezado esté por encima del contenido */
+    background-color: #f4f4f4; /* Fondo del encabezado */
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 2px solid #ddd; /* Resalta la separación */   
+  }
+  
+  .hotel-info-table th,
+  .hotel-info-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+  
+  .hotel-info-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alterna el color de las filas */
+  }
+  
+  
+ 
