@@ -1,6 +1,6 @@
 De ser necesario este es el Script para crear la base de datos de manera manual:
 
--- Crear la base de datos
+-- Crear la base de datos 
 CREATE DATABASE hotelManagement
 WITH OWNER = postgres
 ENCODING = 'UTF8'
